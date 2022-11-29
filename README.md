@@ -22,7 +22,9 @@ pip3 install --upgrade pip
 
 Next, install a clone of the Whisper package and its dependencies (torch, numpy, transformers, tqdm, more-itertools, and ffmpeg-python) into your python environment.
 
-``` pip3 install git+https://github.com/openai/whisper.git ```
+```
+pip3 install git+https://github.com/openai/whisper.git 
+```
 
 Especially if it's pulling torch for the first time, this may take a little while. The repository documentation advises that if you get errors building the wheel for tokenizers, you may also need to install rust. You'll also need ffmpeg - installation depends on your platform. Here are some examples:
 
@@ -49,7 +51,9 @@ Great! You're ready to transcribe! In this example, we're working with [Nicholas
 
 The OpenAI Whisper tool has a variety of models that are English-only or multilingual, and come in a range of sizes whose tradeoffs are speed vs. performance. You can learn more about this [here](https://github.com/openai/whisper#available-models-and-languages). We, the researchers at Deepgram, have found that the small model provides a good balance.
 
-``` whisper "snf025_nikolateslawirelessvision_anonymous_gu.mp3" --model small --language English ```
+``` 
+whisper "snf025_nikolateslawirelessvision_anonymous_gu.mp3" --model small --language English
+```
 
 ```
 [00:00.000 --> 00:09.880]  Nikola Tesla sees a wireless vision by Anonymous, the New York Times, 3rd October, 1915.
