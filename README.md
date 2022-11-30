@@ -79,3 +79,12 @@ whisper "snf025_nikolateslawirelessvision_anonymous_gu.mp3" --model small --lang
 [07:50.940 --> 08:13.840]  1915.
 ```
 
+
+<h3> Command to convert mp4 to mp3 </h3>
+```
+ffmpeg -i video.mp4 -f mp3 -ab 192000 -vn music.mp3
+```
+
+<h3> Command to transcribe</h3>
+
+```whisper video.mp3 --model base --language Portuguese```
